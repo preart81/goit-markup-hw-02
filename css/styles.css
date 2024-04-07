@@ -18,7 +18,26 @@
   --second-family: "Raleway", sans-serif;
 }
 
+/* Visually hidden CSS pattern ------------------*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Body --------------------------------------*/
+
 body {
+  /* width: 1440px; */
   font-family: var(--font-family);
   color: var(--navy-blue);
   background: var(--white);
@@ -27,27 +46,144 @@ body {
 a {
   /* скидання дефолтного підкреслення для посилань */
   text-decoration: none;
+  color: currentColor;
 }
 
 ul {
   /* скидання маркерів у списках */
-  list-style: none;
+  list-style-type: none;
 }
 
-.header {
+/* Top Line ---------------------------------- */
+
+.top-line {
+  padding: 24px 0px;
   background-color: var(--white);
+  border-bottom: 1px solid var(--cornflower);
 }
 
+.top-line nav {
+  display: inline;
+  /* width: 261px; */
+  font-family: var(--font-family);
+  /* margin-left: 76px; */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.top-line nav .logo {
+  margin-left: 156px;
+  margin-right: 76px;
+}
+.top-line nav ul {
+  /* width: 261px; */
+}
+
+.top-line ul,
+.top-line ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+.top-line ul:last-child,
+.top-line ul li:last-child {
+  margin-right: 0;
+}
+
+.top-line address {
+  display: inline-block;
+  text-align: right;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+/* filter ---------------------------------- */
+
+.filter {
+  text-align: center; /* Розмістити вміст по центру */
+  margin-top: 96px;
+}
+
+.filter ul {
+  display: flex; /* Вивести кнопки в один рядок */
+  justify-content: center; /* Розмістити кнопки по центру */
+}
+
+.filter li {
+  margin-right: 24px; /* Відстань між кнопками */
+}
+
+.filter li:last-child {
+  margin-right: 0; /* Відстань між останньою кнопкою та краєм */
+}
+
+.filter button {
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
+  padding: 12px 24px;
+  height: 48px;
+  background-color: var(--cloud);
+
+  /* font */
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--iris);
+}
+
+.filter button:focus,
+.filter button:hover {
+  /* Box model */
+  /* Typography */
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white);
+  /* Visual*/
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  background: var(--ocean);
+  cursor: pointer;
+}
+
+/* projects ----------------------------------*/
+
+.projects {
+  margin-top: 72px;
+}
+
+.projects ul ul li {
+  margin: 12px;
+  display: inline-block;
+  border: 1px solid var(--cornflower);
+  /* width: 360px; */
+  /* height: 420px; */
+}
+
+/* footer ---------------------------------- */
 .footer {
   color: var(--cloud);
   background-color: var(--navy-blue);
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--second-family);
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
