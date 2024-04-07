@@ -43,10 +43,28 @@ body {
   background: var(--white);
 }
 
+h2 {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
 a {
   /* скидання дефолтного підкреслення для посилань */
   text-decoration: none;
   color: currentColor;
+  color: inherit;
+}
+
+a:hover,
+a:focus {
+  color: var(--iris);
 }
 
 ul {
@@ -65,13 +83,10 @@ ul {
 .top-line nav {
   display: inline;
   /* width: 261px; */
-  font-family: var(--font-family);
   /* margin-left: 76px; */
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--navy-blue);
 }
 
 .top-line nav .logo {
@@ -97,9 +112,7 @@ ul {
   display: inline-block;
   text-align: right;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
 }
@@ -132,10 +145,8 @@ ul {
   background-color: var(--cloud);
 
   /* font */
-  font-family: var(--font-family);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   color: var(--iris);
@@ -143,16 +154,7 @@ ul {
 
 .filter button:focus,
 .filter button:hover {
-  /* Box model */
-  /* Typography */
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.04em;
-  text-align: center;
   color: var(--white);
-  /* Visual*/
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
   background: var(--ocean);
@@ -169,16 +171,146 @@ ul {
   margin: 12px;
   display: inline-block;
   border: 1px solid var(--cornflower);
-  /* width: 360px; */
-  /* height: 420px; */
 }
+
+/* what-we-doing ----------------------------------*/
+
+.what-we-doing {
+  padding: 120px 0;
+}
+
+.what-we-doing ul {
+  margin-top: 72px;
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.what-we-doing ul li img {
+  border: 1px solid var(--cornflower);
+}
+
+/* team ----------------------------------*/
+
+.our-team {
+  padding: 120px 0;
+  background-color: var(--cloud);
+  text-align: center;
+}
+
+.our-team ul {
+  margin-top: 72px;
+}
+
+.our-team ul li {
+  margin: 12px;
+  display: inline-block;
+  border: 1px solid var(--cornflower);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: var(--white);
+}
+
+.projects ul ul li:hover,
+.projects ul ul li:focus {
+  border: 1px solid var(--ocean);
+}
+
+.projects ul ul li h3,
+.projects ul ul li p {
+  padding: 0 16px;
+}
+
+/* orer-service -----------------------------*/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background: var(--navy-blue);
+  text-align: center;
+  color: var(--white);
+}
+
+.hero h1 {
+  width: 496px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 107%;
+  letter-spacing: 0.02em;
+}
+
+.hero button {
+  margin: 48px 0 0 0;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  color: var(--white);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: var(--iris);
+}
+
+.hero button:hover,
+.hero button:focus {
+  color: var(--white);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  background: var(--ocean);
+  cursor: pointer;
+}
+
+/* section-advantages -----------------------------*/
+
+.section-advantages {
+  margin: 120px 156px 0;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  color: var(--slate);
+}
+
+.section-advantages h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+.section-advantages ul {
+  /* width: 264px; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 24px;
+}
+
+/* .section-advantages li {
+  width: 264px;
+} */
 
 /* footer ---------------------------------- */
 .footer {
+  height: 312px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: var(--cloud);
   background-color: var(--navy-blue);
 }
 
+.footer-text {
+  width: 264px;
+  margin-top: 16px;
+}
+
+/* logo ------------------------------------ */
 .logo {
   font-family: var(--second-family);
   font-weight: 800;
