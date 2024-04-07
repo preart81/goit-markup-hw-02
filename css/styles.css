@@ -201,14 +201,19 @@ ul {
 
 .our-team ul {
   margin-top: 72px;
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .our-team ul li {
-  margin: 12px;
-  display: inline-block;
+  border-radius: 0 0 4px 4px;
   border: 1px solid var(--cornflower);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
   background: var(--white);
 }
 
