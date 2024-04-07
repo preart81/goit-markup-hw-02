@@ -1,0 +1,60 @@
+:root {
+  /* color */
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+
+  /* font */
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--navy-blue);
+  background: var(--white);
+}
+
+a {
+  /* скидання дефолтного підкреслення для посилань */
+  text-decoration: none;
+}
+
+ul {
+  /* скидання маркерів у списках */
+  list-style: none;
+}
+
+.header {
+  background-color: var(--white);
+}
+
+.footer {
+  color: var(--cloud);
+  background-color: var(--navy-blue);
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+.logo_studio_dark {
+  color: #2e2f42;
+}
+.logo_studio_light {
+  color: #f4f4fd;
+}
