@@ -151,10 +151,6 @@ ul {
   gap: 24px;
 }
 
-.filter li {
-  flex-wrap: nowrap;
-}
-
 .filter button {
   border: 1px solid var(--cornflower);
   border-radius: 4px;
