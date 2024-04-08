@@ -59,7 +59,7 @@ a {
   /* скидання дефолтного підкреслення для посилань */
   text-decoration: none;
   color: currentColor;
-  color: inherit;
+  /* color: inherit; */
 }
 
 a:hover,
@@ -117,24 +117,42 @@ ul {
   color: var(--slate);
 }
 
-/* filter ---------------------------------- */
+/* projects ----------------------------------*/
 
-.filter {
-  text-align: center; /* Розмістити вміст по центру */
-  margin-top: 96px;
+.projects {
+  margin-top: 72px;
 }
 
-.filter ul {
-  display: flex; /* Вивести кнопки в один рядок */
-  justify-content: center; /* Розмістити кнопки по центру */
+.projects h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: left;
+  /* color: var(--navy-blue); */
+}
+
+.projects p {
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.projects li {
+  margin: 12px;
+  display: inline-block;
+  border: 1px solid var(--cornflower);
+}
+
+.filter {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
 }
 
 .filter li {
-  margin-right: 24px; /* Відстань між кнопками */
-}
-
-.filter li:last-child {
-  margin-right: 0; /* Відстань між останньою кнопкою та краєм */
+  flex-wrap: nowrap;
 }
 
 .filter button {
@@ -154,23 +172,12 @@ ul {
 
 .filter button:focus,
 .filter button:hover {
+  border: 1px solid var(--ocean);
   color: var(--white);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
   background: var(--ocean);
   cursor: pointer;
-}
-
-/* projects ----------------------------------*/
-
-.projects {
-  margin-top: 72px;
-}
-
-.projects ul ul li {
-  margin: 12px;
-  display: inline-block;
-  border: 1px solid var(--cornflower);
 }
 
 /* what-we-doing ----------------------------------*/
@@ -199,6 +206,13 @@ ul {
   text-align: center;
 }
 
+.our-team h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
 .our-team ul {
   margin-top: 72px;
   display: flex;
@@ -215,16 +229,6 @@ ul {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 
   background: var(--white);
-}
-
-.projects ul ul li:hover,
-.projects ul ul li:focus {
-  border: 1px solid var(--ocean);
-}
-
-.projects ul ul li h3,
-.projects ul ul li p {
-  padding: 0 16px;
 }
 
 /* orer-service -----------------------------*/
